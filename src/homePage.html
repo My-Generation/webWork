@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/homePage.css">
+    <script type="text/javascript" src="JS/homePage.js"></script>
+    <title>主页</title>
+</head>
+<body>
+    <header>图书管理系统</header>
+    <div class="main">
+        <div class="left">
+            <div class="up">
+                <img src="images/poem.png">
+                <ul>
+                    <li>昨日数据:</li>
+                    <li><p>总借阅量:</p>1234</li>
+                    <li><p>归还总量:</p>996</li>
+                    <li><p>提醒缺货:</p>2</li>
+                    <li><p>丢失图书:</p>0</li>
+                    <li style="height: 120px"><img style="width: 100%;height: 100%;" src="images/data.jpg"></li>
+                    <li>用户反馈:</li>
+                    <li><p>收到好评:</p>12</li>
+                    <li><p>收到投诉:</p>0</li>
+                    <li><p>反馈漏洞:</p>0</li>
+                    <li><p>其他问题:</p>0</li>
+                </ul>
+            </div>
+            <div class="down">
+                备注: 若要获取管理员权限，请联系root最高权限管理员。获得许可后即可进行操作。
+            </div>
+        </div>
+        <div class="left-replace"></div>
+        <div class="book" id="first">
+            <p>科幻经典</p>
+            <ul id="list">
+                <li id="1"><a href="detail.html">《蒲公英王朝》</a><button onclick="del(1)">删除</button></li>
+                <li id="2"><a href="detail.html">《银河帝国》</a><button onclick="del(2)">删除</button></li>
+                <li id="3"><a href="detail.html">《机器人启示录》</a><button onclick="del(3)">删除</button></li>
+                <li id="4"><a href="detail.html">《重启人》</a><button onclick="del(4)">删除</button></li>
+                <li id="5"><a href="detail.html">《流浪地球》</a><button onclick="del(5)">删除</button></li>
+                <li id="6"><a href="detail.html">《三体》</a><button onclick="del(6)">删除</button></li>
+                <li id="7"><a href="detail.html">《三体·黑暗森林》</a><button onclick="del(7)">删除</button></li>
+                <li id="8"><a href="detail.html">《三体·死神永生》</a><button onclick="del(8)">删除</button></li>
+                <li id="9"><a href="detail.html">《蝴蝶》</a><button onclick="del(9)">删除</button></li>
+                <li id="10"><a href="detail.html">《时间移民》</a><button onclick="del(10)">删除</button></li>
+            </ul>
+            <input id="science" value="" placeholder="请填写书名">
+            <button class="publish" onclick="scienceAddLi()">发布</button>
+        </div>
+        <div class="book" id="second">
+            <p>国学经典</p>
+            <ul id="list1">
+                <li id="101"><a href="detail.html">《红楼梦》</a><button onclick="dele(101)">删除</button></li>
+                <li id="102"><a href="detail.html">《镜花缘》</a><button onclick="dele(102)">删除</button></li>
+                <li id="103"><a href="detail.html">《史记》</a><button onclick="dele(103)">删除</button></li>
+                <li id="104"><a href="detail.html">《论语》</a><button onclick="dele(104)">删除</button></li>
+                <li id="105"><a href="detail.html">《狂人日记》</a><button onclick="dele(105)">删除</button></li>
+                <li id="106"><a href="detail.html">《西游记》</a><button onclick="dele(106)">删除</button></li>
+                <li id="107"><a href="detail.html">《四库全书》</a><button onclick="dele(107)">删除</button></li>
+                <li id="108"><a href="detail.html">《永乐大典》</a><button onclick="dele(108)">删除</button></li>
+                <li id="109"><a href="detail.html">《呐喊》</a><button onclick="dele(109)">删除</button></li>
+                <li id="110"><a href="detail.html">《彷徨》</a><button onclick="dele(110)">删除</button></li>
+            </ul>
+            <input id="ancient" value="" placeholder="请填写书名">
+            <button class="publish" onclick="ancientAddLi()">发布</button>
+        </div>
+        <div class="book" id="third">
+            <p>畅销小说</p>
+            <ul id="list2">
+                <li id="201"><a href="detail.html">《罗生门》</a><button onclick="delet(201)">删除</button></li>
+                <li id="202"><a href="detail.html">《教父》</a><button onclick="delet(202)">删除</button></li>
+                <li id="203"><a href="detail.html">《美国众神》</a><button onclick="delet(203)">删除</button></li>
+                <li id="204"><a href="detail.html">《白夜行》</a><button onclick="delet(204)">删除</button></li>
+                <li id="205"><a href="detail.html">《海上钢琴师》</a><button onclick="delet(205)">删除</button></li>
+                <li id="206"><a href="detail.html">《福尔摩斯》</a><button onclick="delet(206)">删除</button></li>
+                <li id="207"><a href="detail.html">《沉默的羔羊》</a><button onclick="delet(207)">删除</button></li>
+                <li id="208"><a href="detail.html">《嫌疑人X的献身》</a><button onclick="delet(208)">删除</button></li>
+                <li id="209"><a href="detail.html">《摆渡人》</a><button onclick="delet(209)">删除</button></li>
+                <li id="210"><a href="detail.html">《这个杀手不太冷》</a><button onclick="delet(210)">删除</button></li>
+            </ul>
+            <input id="novel" value="" placeholder="请填写书名">
+            <button class="publish" onclick="novelAddLi()">发布</button>
+        </div>
+        <div class="right">
+            <ul id="message">
+                <li>欢迎回来</li>
+                <li><img style="width: 50px; height: 50px; border-radius: 50%;" src="images/avatar.jpg"></li>
+                <li>管理人员: 张思睿</li>
+                <li>权限: root</li>
+                <li>上次登录: 2021.6.10</li>
+            </ul>
+            <img id="console" src="./images/console.jpg">
+            <ul id="diary">
+                <li>系统日志:</li>
+                <li>
+                    <div>
+                        <p>警告</p>
+                        <p>0</p>
+                    </div>
+                    <div style="margin-left: 140px;">
+                        <p>漏洞</p>
+                        <p style="color: red;">1</p>
+                    </div>
+                </li>
+                <li>
+                    <img style="width: 100%; height: 150px;" src="images/diary.jpg">
+                </li>
+            </ul>
+            <ul id="bottom">
+                <li><p>高危漏洞:</p>0</li>
+                <li><p>造成损失:</p>NAN</li>
+                <li><p>上报次数:</p>13</li>
+                <li><p>修复漏洞:</p>2</li>
+                <li><p>现存漏洞:</p>0</li>
+                <li><p>网络波动:</p>0</li>
+                <li><p>系统报错:</p>0</li>
+            </ul>
+            <a href="personal.html">修改个人信息</a>
+        </div>
+    </div>
+</body>
+</html>

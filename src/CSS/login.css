@@ -1,0 +1,164 @@
+* {
+    padding:0px;
+    margin: 0px;
+}
+
+*{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 30px;
+    font-size: 20px;
+    line-height: 50px;
+    color: darkgrey;
+}
+
+.nav li:nth-child(1){
+    font-size: 20px;
+    line-height: 50px;
+    color: darkblue;
+}
+
+.nav li:nth-child(3){
+    margin-left: 1300px;
+}
+
+.sun {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#outer{
+    position: relative;
+    width: 50%;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 50%;
+    height: 768px;
+}
+
+.count{
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 10px;
+    right: 10px;
+}
+
+.count li{
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+input {
+    display: block;
+    width: 348px;
+    height: 48px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+}
+
+input::placeholder{
+    color: darkgrey;
+    font-size: 17px;
+    line-height: 48px;
+}
+
+button {
+    width: 350px;
+    height: 40px;
+    background-color: coral;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 40px;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.right{
+    position: relative;
+    width: 50%;
+    background: url("../images/login.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.right p{
+    font-size: 40px;
+    color: azure;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+form {
+    width: 370px;
+    margin-left: 300px;
+    margin-top: 150px;
+    padding: 30px;
+    background-color: antiquewhite;
+    border-radius: 3px;
+}
+
+.choose{
+    position: relative;
+    width: 350px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.reg {
+    position: absolute;
+    left: 50px;
+    top: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
+.bottom{
+    background-color: darkgrey;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

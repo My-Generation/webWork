@@ -1,0 +1,240 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+
+* {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: azure;
+    background-color: darkcyan;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 1200px;
+    width: 100%;
+    background: url("../images/back.jpg") no-repeat center;
+}
+
+.book {
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.book p {
+    font-size: 30px;
+    color: aquamarine;
+}
+
+.book ul {
+    width: 400px;
+}
+
+.book ul li {
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 10px;
+    color: azure;
+    text-align: center;
+}
+
+.book ul li button{
+    width: 50px;
+    height: 100%;
+    font-size: 12px;
+    background-color: aquamarine;
+    border: 0px;
+    float: right;
+}
+
+.publish {
+    width: 40px;
+    height: 20px;
+    color: cadetblue;
+    background-color: azure;
+}
+
+.book ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.book input{
+    width: 150px;
+    height: 20px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.book input::placeholder{
+    color: darkgrey;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.book button{
+    border: 0px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 1px;
+}
+
+.left {
+    position: fixed;
+    top: 50px;
+    width: 300px;
+    height: 600px;
+    padding: 5px;
+    background-color: azure;
+}
+
+.left-replace{
+    width: 300px;
+    height: 800px;
+    opacity: 0;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.up ul {
+    margin-top: 10px;
+}
+
+.up ul li {
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.up ul li p {
+    font-size: 18px;
+    line-height: 25px;
+    height: 100%;
+    float: left;
+}
+
+.up ul li:first-child{
+    text-align: left;
+    color: darkred;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.up ul li:nth-child(7){
+    text-align: left;
+    color: darkred;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.down {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 15px;
+    color: darkgrey;
+}
+
+.right {
+    width: 300px;
+    height: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: azure;
+}
+
+#message {
+    width: 100%;
+}
+
+#message li {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#message li:first-child{
+    font-size: 15px;
+    font-weight: bold;
+    color: darkgrey;
+}
+
+#console {
+    width: 290px;
+    height: 290px;
+}
+
+#diary {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#diary li {
+    width: 100%;
+
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#diary li:nth-child(1){
+    text-align: center;
+    font-size: 20px;
+    color: darkgrey;
+}
+
+#diary li:nth-child(2){
+    text-align: center;
+    padding-left: 50px;
+    display:flex;
+}
+
+#bottom {
+    margin-top: 10px;
+}
+
+#bottom li {
+    width: 200px;
+    height: 25px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#bottom li p {
+    font-size: 18px;
+    line-height: 25px;
+    height: 100%;
+    float: left;
+}
+
+.right-replace {
+    width: 300px;
+    height: 600px;
+}
+
+.right a {
+    display: block;
+    margin-top: 20px;
+    margin-left: 120px;
+    text-decoration: none;
+    font-size: 12px;
+    color: darkgrey;
+}
+

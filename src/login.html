@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/login.css">
+    <script type="text/javascript" src="JS/login.js"></script>
+    <title>登录界面</title>
+</head>
+<body>
+    <header>
+        <ul class="nav">
+            <li>日期:2021.6.11 星期五</li>
+            <li><img class="sun" src="images/sun.jpg"></li>
+            <li>设置</li>
+            <li>菜单</li>
+            <li>记录</li>
+        </ul>
+    </header>
+    <div class="main">
+        <div id="outer">
+            <ul id="imgList" class="list">
+                <li><img  src="images/cover.jpg"></li>
+                <li><img  src="images/cover3.jpg"></li>
+                <li><img  src="images/cover4.jpg"></li>
+                <li><img  src="images/cover5.jpg"></li>
+                <li><img  src="images/cover.jpg"></li>
+                <li><img  src="images/cover3.jpg"></li>
+                <li><img  src="images/cover4.jpg"></li>
+                <li><img  src="images/cover5.jpg"></li>
+            </ul>
+            <ul id="navId" class="count">
+                <li><a href="JS/login.js"></a></li>
+                <li><a href="JS/login.js"></a></li>
+                <li><a href="JS/login.js"></a></li>
+                <li><a href="JS/login.js"></a></li>
+                <li><a href="JS/login.js"></a></li>
+                <li><a href="JS/login.js"></a></li>
+                <li><a href="JS/login.js"></a></li>
+                <li><a href="JS/login.js"></a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <p>欢迎来到图书管理系统</p>
+            <form>
+                <input type="text" id="username" placeholder="请输入用户名">
+                <input type="password" id="password" placeholder="请输入密码">
+                <button id="log-button" onclick="check()">登录</button>
+                <div class="choose">
+                    <a class="reg" href="register.html">没有账号？注册一个</a>
+                </div>
+            </form>
+            <a href="admin.html" style="color: aliceblue">管理员登录</a>
+        </div>
+    </div>
+    <div class="bottom">图书管理系统 CREATED BY ZSR</div>
+</body>
+</html>
